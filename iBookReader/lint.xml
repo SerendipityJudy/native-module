@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SdCardPath" severity="ignore" />
+    <issue id="WrongCall">
+        <ignore path="src/com/apicloud/reader/BookActivity.java" />
+    </issue>
+</lint>

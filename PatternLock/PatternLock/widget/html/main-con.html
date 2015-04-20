@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="chs">
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>App</title>
+                <link rel="stylesheet" type="text/css" href="../css/api.css" />
+                <link rel="stylesheet" type="text/css" href="../css/common.css" />
+                <link rel="stylesheet" type="text/css" href="../css/main-con.css" />
+    </head>
+    <body>
+        <div id="wrap">
+        </div>
+    </body>
+    <script type="text/javascript" src="../script/api.js"></script>
+    <script type="text/javascript">
+        function callBack(ret, err){
+            switch(ret.status)
+            {
+                case 0:
+                {
+                    alert("Unlock Right");
+                }
+                break;
+                case 1:
+                {
+                    alert("Unlock Wrong");
+                }
+                break;
+                case 2:
+                {
+                    alert("Repeat It");
+                }
+                break;
+                case 3:
+                {
+                    alert("Repeat It Worng");
+                }
+                break;
+                case 4:
+                {
+                    alert("Repeat It Right" + ret.code);
+                }
+                break;
+                case 5:
+                {
+                    alert("Verify For Chg Worng");
+                }
+                break;
+                case 6:
+                {
+                    alert("Verify For Chg Right");
+                }
+                break;
+                default:
+                
+            }
+        }
+    apiready = function(){
+        var demo = api.require('patternLock');
+        var param = {
+            "viewName":"main",
+            "rightColor":"#00FF00",
+            "drawColor":"#222222",
+            "wrongColor":"#FF0000",
+            "normalColor":"#000000",
+            "frame": "{{0,100},{320,300}}",
+            "mode": "0",
+            "rightCode": "123"//code must be number and not duplicate
+        };
+        demo.addPatternLock(param, callBack);
+    };
+    </script>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=0">
+    <title>iBookReader</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <script type="text/javascript">
+
+		var iBookReader = null;
+		apiready = function(){
+			iBookReader = api.require('iBookReader');
+	    }
+	    
+		function openBookShelf(){
+			iBookReader.openBookShelf();
+		}
+		
+		function openBook(){
+			var param = {path:'/storage/emulated/0/xiaoyang/小说/《大国航母》.txt'};
+			iBookReader.openBook(param);
+			/**
+			var fb = api.require('fileBrowser');
+			fb.open( 
+			     function(ret,err) {
+			   		fb.close();
+			   		var param = {path:ret.url};
+					iBookReader.openBook(param);
+			    }
+			);*/
+		}
+	</script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main"> 
+            <div  >
+            	<input type="button" onclick="openBookShelf()" value="打开书架" /><br><br>
+            	<input type="button" onclick="openBook()" value="打开书籍" /><br><br>
+            </div>
+        </div>   
+    </div>
+</body>
+</html>

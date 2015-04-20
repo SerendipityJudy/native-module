@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=0">
+        <title>APICloud</title>
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/common.css" />
+        <script type="text/javascript">
+			var screenLock = null;
+			apiready = function() {
+				screenLock = api.require('screenLock');
+			}
+			function callback(param) {
+				alert(param.status);
+			}
+
+			function show() {
+				screenLock.show({
+					color : '55ffff00'
+				}, callback);
+			}
+
+			function set() {
+				screenLock.set(callback);
+			}
+
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="main">
+                <div  >
+                    <input type="button" onclick="show()" value="show"  />
+                    <input type="button" onclick="set()" value="set"  />
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

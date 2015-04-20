@@ -1,0 +1,8 @@
+{
+	modules:[
+		{
+		    name:'iBookReader',
+		    class:'com.android.reader.APIModule'
+		}
+	]
+}
