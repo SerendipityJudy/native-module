@@ -1,0 +1,11 @@
+<widget id="A6978001508836"  version="0.0.1">
+    <name>App</name>
+    <description>
+        a sample app.
+    </description>
+    <author email="developer@apicloud.com" href="http://www.apicloud.com">
+        APICloud
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

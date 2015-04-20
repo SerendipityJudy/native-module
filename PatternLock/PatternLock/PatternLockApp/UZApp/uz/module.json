@@ -1,0 +1,12 @@
+[
+ {
+    "name":"moduleDemo",
+    "class":"UZModuleDemo",
+    "methods":["showAlert"]
+    "launchClassMethod":"launch"
+ },{
+ "name":"modulePatternLock",
+ "class":"PatternLock",
+ "methods":["addPatternLock"]
+ }
+]

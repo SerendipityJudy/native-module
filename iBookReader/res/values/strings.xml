@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="back">返回</string>
+    <string name="confirm">确定</string>
+    <string name="prompt">提示</string>
+    <string name="complete">完成</string>
+    <string name="exit">退出</string>
+    <string name="browser_exitdialog_app_text">确定要退出程序吗？</string>
+    <string name="browser_exitdialog_msg">退出提示</string>
+    <string name="browser_dialog_error">错误提示</string>
+    <string name="browser_init_error">程序不完整</string>
+    
+    <string name="hello">Hello World</string>
+    <string name="app_name">iBookReader</string>
+    <string name="lovetitle">iBookReader</string>
+    <string name="progress">当前进度：%s</string>
+	<string name="progress_o">当前进度：20%</string>
+	<string name="confirm_exit">确认退出程序？</string>
+	<string name="mainmenu_home">主目录</string>
+	<string name="mainmenu_refresh">刷新</string>
+	<string name="mainmenu_createdir">新建文件夹</string>
+	<string name="mainmenu_exit">返回书架</string>
+	<string name="file_cannotopen">无法打开: %1$s</string>
+	
+	<string name="file_create_fail">创建文件失败！</string>
+	<string name="file_rename_fail">重命名失败！</string>
+	
+	<string name="file_name">文件名</string>
+	<string name="file_size">大小</string>
+	<string name="file_contents">内容</string>
+	<string name="file_paste">粘贴</string>
+	<string name="file_copy">复制</string>
+	<string name="file_move">移动</string>
+	<string name="file_create">新建</string>
+	<string name="file_copy_fail">复制文件失败！</string>
+	<string name="file_move_fail">移动文件失败！</string>
+	<string name="file_notexists">文件不存在！</string>
+	
+	<string name="font_color">字体颜色</string>
+</resources>
